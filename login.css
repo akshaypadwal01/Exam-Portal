@@ -1,0 +1,470 @@
+body {
+  background-image: url('IMG/bg-image.jpeg');
+  background-size: 100% auto; /* Cover the entire background */
+  background-position: center; /* Center the background image */
+}
+
+
+.header {
+	overflow: hidden;
+	background-color: #26bbbc;
+	padding: 20px 25px;
+	display: flex; /* Display flex to align items in a row */
+	justify-content: space-between; /* Space between logo and header-right */
+	align-items: center; /* Center vertically */
+  }
+  
+  .header a {
+	color: black;
+	text-decoration: none;
+	font-size: 18px; 
+	line-height: 25px;
+	border-radius: 31px;
+	padding: 12px;
+  }
+  
+  .header a.logo {
+	font-size: 25px;
+	font-weight: bold;
+	display: flex; /* To align image and text */
+	align-items: center; /* Center vertically */
+  }
+  
+  .header a:hover {
+	background-color: #ddd;
+	color: black;
+  }
+  
+  .header a.active {
+	background-color: rgb(22, 140, 136);
+	color: white;
+	margin: 5px;
+  }
+  
+  .header-right {
+	display: flex; /* Display links horizontally */
+  }
+  
+  .logo img {
+	border-radius: 50%;
+	width: 50px;
+	height: 50px;
+	object-fit: cover;
+	margin-right: 25px;
+  }
+
+
+
+
+
+
+  
+  
+  @media screen and (max-width: 500px) {
+	.header a,
+	.header-right {
+	  flex-direction: column; /* Stack items vertically on small screens */
+	  align-items: center; /* Center horizontally */
+	}
+  }
+  
+/* login */
+b{
+    color: black;
+  }
+  .login-form {
+    width: 410px;
+    margin: 110px auto;
+    font-size: 15px;
+  }
+  .login-form form {
+    margin-bottom: 15px;
+    background: #f7f7f7;
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    padding: 30px;
+  }
+  .login-form h2  {
+    margin: 0 0 15px;
+    color: black;
+  }
+  .form-control, .btn {
+    min-height: 38px;
+    border-radius: 2px;
+  }
+  .btn {        
+    font-size: 15px;
+    font-weight: bold;
+  }
+
+  
+/* Footer */
+footer {
+  background-color: #26bbbc;
+  color: white;
+  padding: 20px 0;
+}
+
+.foot {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  width: 100%; 
+  height: 80px; 
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  margin-left: 27px;
+}
+
+.left-section img.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.heading1 {
+  font-size: 24px;
+}
+
+.footer-content {
+  display: flex;
+  align-items: flex-start;
+}
+
+.useful-links ul {
+  list-style: none;
+  padding: 0;
+}
+
+.useful-links ul li {
+  display: inline-block;
+  margin-right: 10px;
+  font-family: 'Poppins', sans-serif;
+  font-size: larger;
+  font-stretch: expanded;
+}
+.useful-links ul li a {
+  margin-right: 15px;
+  color: rgb(64, 64, 246);
+}
+.useful-links ul li a:hover {
+  color: red; /* Change the color when hovered over */
+}
+
+.contact-info {
+  margin-right: 20px;
+  margin-top: 24px;
+}
+.contact-info .info p {
+  margin-bottom: 4px; /* Adjust the value as needed */
+}
+
+
+.info{
+	display: flex;
+	flex-direction: column;
+	column-gap: 10%;
+  margin-right: 50px;
+  margin-top: 10px;
+  }
+
+
+.copbut {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.social-media-icons {
+  display: flex; /* Make the icons flex items */
+  align-items: center; /* Center them vertically */
+  margin-top: 25px;
+  margin-right: 120px;
+}
+
+.social-media-icons button {
+  background-color: transparent;
+  border: none;
+  margin-right: 10px;
+}
+
+.social-media-icons button img {
+  width: 30px;
+  height: 30px;
+}
+
+.copyright {
+  margin-left: 26px;
+  margin-top: -30px;
+}
+
+.useful-links {
+  margin-right: 20px; /* Adjust margin as needed */
+}
+
+.useful-links ul {
+  list-style: none;
+  padding: 0;
+  margin-right: -256px;
+}
+
+.useful-links ul li {
+  display: inline-block;
+  margin-right: 10px;
+  gap: 20px;
+}
+
+
+.buttons{
+  justify-self: flex-end;
+  align-self: flex-start;
+  margin-right: 170px;
+  display: flex;
+  gap: 20px;
+}
+.buttons button{
+  background-color: transparent;
+  display: inline-flex;
+justify-content: center;
+align-items: center;
+  width:  40px;
+  border: none;
+  border-radius: 5px;
+  transition: transform 100ms ease-in-out;
+}
+.buttons button:hover{
+  background-color: green;
+  transform: scale(1.1);
+}
+.buttons button img{
+  border-radius: 50%;
+  width: 40px;
+  height: 40px;
+  object-fit: contain;
+}
+button img:hover{
+  filter: invert(100%);
+}
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+/* Responsive Adjustments  */
+
+/* Media query for screens smaller than 500px */
+@media screen and (max-width: 500px) {
+  .login-form {
+    width: 90%; /* Adjust form width for smaller screens */
+    margin: 50px auto; /* Adjust margin for smaller screens */
+  }
+
+  .login-form form {
+    padding: 20px; /* Adjust form padding for smaller screens */
+  }
+
+  .login-form h2 {
+    font-size: 20px; /* Decrease heading font size for smaller screens */
+  }
+
+  .form-control,
+  .btn {
+    min-height: 38px; /* Adjust input height for smaller screens */
+    font-size: 14px; /* Decrease font size for inputs */
+  }
+
+  .btn {
+    font-size: 14px; /* Decrease font size for buttons */
+  }
+}
+
+
+
+
+
+
+/* For mobile devices */
+@media screen and (max-width: 500px) {
+  .header {
+    padding: 15px 20px; /* Adjust padding */
+    flex-direction: column; /* Stack items vertically */
+    align-items: center; /* Center horizontally */
+  }
+
+  .header a.logo {
+    margin-bottom: 10px; /* Add some space below the logo */
+  }
+
+  .header a {
+    margin: 5px; /* Add margin between links */
+    font-size: 16px; /* Decrease font size for links */
+    line-height: 20px; /* Adjust line height */
+  }
+
+  .logo img {
+    width: 40px; /* Decrease logo size */
+    height: 40px;
+    margin-right: 10px; /* Reduce margin */
+  }
+
+  .header-right {
+    margin-top: 10px; /* Add some space above header-right */
+  }
+
+  .login-form {
+    width: 90%; /* Adjust form width */
+    margin: 50px auto; /* Adjust margin */
+    font-size: 14px; /* Decrease font size */
+  }
+
+  .footer {
+    height: auto; /* Allow content to expand */
+    padding: 20px; /* Add padding */
+  }
+
+  .foot {
+    grid-template-areas: 
+      "foot1"
+      "foot2";
+    gap: 20px; /* Add gap between sections */
+  }
+
+  .left-section {
+    justify-content: center; /* Center content horizontally */
+    text-align: center; /* Center text */
+  }
+
+  .left-section img {
+    width: 80px; /* Decrease image size */
+    height: 80px;
+  }
+
+  .left-section .heading1 {
+    font-size: 25px; /* Decrease font size */
+    margin: 10px 0; /* Adjust margin */
+    width: auto; /* Allow text to expand */
+  }
+
+  .useful-links ul,
+  .facility-links ul {
+    font-size: 16px; /* Decrease font size */
+    gap: 10px; /* Add gap between items */
+  }
+
+  #adr {
+    width: 100%; /* Make address text responsive */
+  }
+
+  .copbut {
+    justify-content: center; /* Center buttons horizontally */
+    margin: 20px 0; /* Add margin */
+  }
+
+  .buttons {
+    justify-content: center; /* Center buttons horizontally */
+    margin-right: 0; /* Remove right margin */
+  }
+}
+
+
+
+
+
+
+/* Adjustments for smaller screens */
+@media screen and (max-width: 768px) {
+  /* Footer Styles */
+footer {
+  background-color: #26bbbc;
+  color: white;
+  padding: 20px 0;
+}
+
+.foot {
+  display: flex;
+  flex-direction: column; /* Change to column layout for mobile */
+  align-items: center; /* Center items vertically */
+  width: 100%; 
+  height: auto; /* Adjust height to fit content */
+}
+
+.left-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px; /* Add some space below the logo */
+  margin-left: -170px;
+}
+
+.left-section img.logo {
+  width: 50px;
+  height: 50px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+
+.heading1 {
+  font-size: 24px;
+}
+
+.footer-content {
+  display: flex;
+  flex-direction: column; /* Change to column layout for mobile */
+  align-items: center; /* Center items horizontally */
+}
+
+.useful-links ul {
+  list-style: none;
+  padding: 0;
+  text-align: center; /* Center the links */
+  margin-top: -48px;
+}
+
+.useful-links ul li {
+  display: block; /* Change to block layout for mobile */
+  margin-bottom: 10px; /* Add space between links */
+}
+
+.contact-info {
+  margin-top: -92px;
+  margin-left: -114px;
+}
+
+.copbut {
+  display: flex;
+  flex-direction: column; /* Change to column layout for mobile */
+  align-items: center; /* Center items horizontally */
+}
+
+.social-media-icons {
+  margin-top: 10px; /* Add space above social media icons */
+}
+
+.social-media-icons button {
+  background-color: transparent;
+  border: none;
+  margin: 0 5px; /* Add space between icons */
+}
+
+.social-media-icons button img {
+  width: 30px;
+  height: 30px;
+}
+
+.copyright {
+  margin-top: 40px; /* Add space above copyright */
+}
+}
