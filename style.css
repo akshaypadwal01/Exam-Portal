@@ -133,21 +133,6 @@ button:hover {
 button:active {
   transform: scale(1.1); /* Zoom effect on button click */
 }
-
-@media screen and (max-width: 500px) {
-  .header a,
-  .header-right {
-    flex-direction: column; /* Stack items vertically on small screens */
-    align-items: center; /* Center horizontally */
-  }
-}
-
-
-
-
-
-
-
 /* Hero Section */
 
 
@@ -540,19 +525,6 @@ button:hover {
   display: table;
 }
 
-/* Change styles for cancel button and signup button on extra small screens */
-@media screen and (max-width: 300px) {
-  .cancelbtn, .signupbtn {
-    width: 100%;
-  }
-}
-
-
-
-
-
-
-
 
 
 
@@ -698,33 +670,6 @@ footer {
 
 
 
-
-@media only screen and (max-width: 600px) {
-  .header a {
-    font-size: 14px; /* Further reduce font size for very small screens */
-    padding: 8px; /* Further reduce padding for very small screens */
-  }
-  
-  .header a.logo {
-    font-size: 18px; /* Further reduce font size for very small screens */
-  }
-
-  .logo img {
-    width: 35px; /* Further reduce image size for very small screens */
-    height: 35px; /* Further reduce image size for very small screens */
-    margin-right: 10px; /* Further reduce margin for very small screens */
-  }
-  
-}
-
-
-
-
-
-
-
-
-
 /* Example of a media query */
 @media screen and (max-width: 768px) {
   /* CSS rules for screens with a maximum width of 768px */
@@ -764,17 +709,91 @@ footer {
 /* Responsive Adjustments  */
 
 
-/* Example of a media query */
-@media screen and (max-width: 768px) {
-  /* CSS rules for screens with a maximum width of 768px */
+/* Media query for 600px viewport width */
+@media only screen and (max-width: 600px) {
+  .toggle-button {
+    display: block; /* Show the button for smaller screens */
+  }
+
+  .header-links {
+    display: none; /* Hide the links by default */
+    position: absolute; /* Position the menu links absolutely */
+    top: 8%; /* Position the menu links below the menu button */
+    left: 0;
+    margin-left: 234px;
+    background-color: #333;
+    padding: 10px; /* Add padding for spacing */
+    z-index: 1; /* Ensure links appear above other content */
+  }
+
+  .header-links a {
+    display: block; /* Display links as block to stack vertically */
+    color: #fff;
+    font-size: 16px; /* Set font size */  
+  }
+
+  .header a.logo {
+    margin-left: -24px;
+    padding: 10px;
+  }
+
+  .hero-section {
+    height: 28vh; /* Set the height of the hero section to the full viewport height */
+  }
+  #features {
+    font-size: 30px;
+    color: black;
+    margin-top: 37px;
+  }
+    
+  .features {
+    height: 233svh;
+    grid-template-columns: repeat(1, 300px);
+    padding: 0 0 54px 0;
+    margin-top: 50px;
+  }
+  .feat {
+    background-color: rgb(231, 233, 231);
+    border: 1px solid rgb(189, 240, 175);
+    border-radius: 29px;
+    gap: 30px;
+  }
+
+  .popup {
+    top: 54%;
+    left: 50%;
+    width: 350px;
+  }
+
+  .popup-content p {
+    font-size: 13px;
+  }
+
+  .infinite-scroll {
+    gap: 30px;
+    background-color: #b6d97ec2;
+    margin-top: 90px;
+  }
+
+.tests p {
+  font-size: 15px; 
 }
 
-/* Adjustments for smaller screens */
-@media screen and (max-width: 768px) {
-  /* Footer Styles */
-footer {
-  background-color: #26bbbc;
-  color: white;
+.tests {
+  width: 28svw;
+  height: 53svh;
+  gap: 0px;
+}
+
+.scroller__inner {
+  gap: 1rem;
+}
+
+.scroller[data-duration = "slow"]{
+  --animation-duration: 10s;
+}
+
+.footer {
   padding: 20px 0;
 }
 
@@ -787,115 +806,77 @@ footer {
 }
 
 .left-section {
-  display: flex;
-  align-items: center;
   margin-bottom: 10px; /* Add some space below the logo */
-  margin-left: -170px;
-}
-
-.left-section img.logo {
-  width: 50px;
-  height: 50px;
-  border-radius: 50%;
-  margin-right: 10px;
-}
-
-.heading1 {
-  font-size: 24px;
+  margin-left: -154px;
 }
 
 .footer-content {
-  display: flex;
   flex-direction: column; /* Change to column layout for mobile */
   align-items: center; /* Center items horizontally */
 }
 
 .useful-links ul {
-  list-style: none;
   padding: 0;
   text-align: center; /* Center the links */
   margin-top: -48px;
 }
 
 .useful-links ul li {
-  display: block; /* Change to block layout for mobile */
+  display: block;
   margin-bottom: 10px; /* Add space between links */
 }
 
+.contact-info .info {
+  margin-top: 15px;
+  margin-left: 27px;
+}
 .contact-info {
   margin-top: -92px;
   margin-left: -114px;
 }
 
 .copbut {
-  display: flex;
-  flex-direction: column; /* Change to column layout for mobile */
-  align-items: center; /* Center items horizontally */
+  flex-direction: column; 
 }
 
 .social-media-icons {
-  margin-top: 10px; /* Add space above social media icons */
+  margin-top: -83px;
+  margin-left: -135px;
 }
 
 .social-media-icons button {
-  background-color: transparent;
-  border: none;
-  margin: 0 5px; /* Add space between icons */
-}
-
-.social-media-icons button img {
-  width: 30px;
-  height: 30px;
+  margin: 0 -25px;
 }
 
 .copyright {
-  margin-top: 40px; /* Add space above copyright */
+  margin-top: 50px;
+  margin-left: 2px;
+  margin-bottom: 7px;
 }
 
-
-
-
-
-.tests{
-  width: 27svw;
-  height: 66svh;
-  display: flex;
-  flex-direction: column;
-  align-items: center;
-  gap: 40px;
-}
+button {
+  padding: 12px 8px;
+  width: 100%;
+  opacity: 0.9;
 }
 
-
-@media screen and (max-width: 360px) {
-    .header {
-        padding: 10px;
-    }
-    .logo img {
-        width: 30px;
-        height: 30px;
-    }
-    .header a.logo {
-        font-size: 20px;
-    }
-    .header a {
-        font-size: 14px;
-    }
-    button {
-        margin: 10px 0 0 20px;
-        padding: 8px 16px;
-        font-size: 18px;
-    }
+button:hover {
+  opacity:1;
 }
-.hero-section {
-    position: relative;
-    height: 80vh;
-    color: #ffffff;
-    text-align: center;
-    display: flex;
-    align-items: center;
-    justify-content: center;
-    text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.5);
+
+button {
+  margin: 20px 0 0 40px; 
+  padding: 10px 6px;
+  background-color: #597fd3;
+  font-size: 9px; 
+  margin-top: -8px;
+}
+
+.hero-content {
+  z-index: 1;
+  margin-right: 335px;
+  margin-top: 37px;
+}
 }
 
 
