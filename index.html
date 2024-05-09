@@ -273,7 +273,20 @@
         </div>
     </footer>
     
+<script>
+    function toggleMenu() {
+    var headerLinks = document.getElementById("header-links");
+    var header = document.querySelector('.header');
+    header.classList.toggle('menu-open'); // Toggle menu-open class on header
+    if (headerLinks.style.display === "block") {
+        headerLinks.style.display = "none";
+    } else {
+        headerLinks.style.display = "block";
+    }
+}
 
+
+</script>
 
 
 
