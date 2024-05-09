@@ -17,41 +17,32 @@
 
 
         <meta name="viewport" content="width=device-width, initial-scale=1">
+        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css" class="stylesheet">
         <link rel="stylesheet" href="style.css">
 </head>
 <body>
 
-<div class="header">
-    <!-- <div class="logo">-->
-        <!-- <img src="IMG/Exam logo.jpg" alt="Exam Logo">  -->
-        
-  <a href="#default" class="logo"> <img src="IMG/Exam logo.jpg" alt="Exam Logo">Tech Quizer</a>
-  <div class="header-right">
-    <a class="active" href="index.html">Home</a>
-    <a class="active" href="about.html">About us</a>
-    <a class="active" href="signup.html">Sign up</a>
-    <a class="active" href="login.html">login</a>
-  </div>
-</div>
-
-
-
-
-
-
-<section class="hero-section">
-    <div class="hero-content">
-      <button>GET STARTED</button>
+    <div class="header">
+        <a href="#default" class="logo"> <img src="IMG/Exam logo.jpg" alt="Exam Logo">Tech Quizer</a>
+        <div class="header-right">
+            <!-- Toggle button for mobile -->
+            <button class="toggle-button" onclick="toggleMenu()"><i class="fas fa-bars"></i></button>
+            <!-- Navigation links -->
+            <div class="header-links" id="header-links">
+                <a class="active" href="index.html">Home</a>
+                <a class="active" href="about.html">About us</a>
+                <a class="active" href="signup.html">Sign up</a>
+                <a class="active" href="login.html">login</a>
+            </div>
+        </div>
     </div>
-  </section>
 
 
-
-
-
-
-
-
+    <section class="hero-section">
+        <div class="hero-content">
+          <button>GET STARTED</button>
+        </div>
+      </section>
 
 
 <h2 id="features">How Exam Work</h2>
@@ -87,7 +78,7 @@
         <div class="popup-content">
             <span class="close" onclick="closePopup()">&times;</span>
             <h2>Description for Create New Account</h2>
-            <p>1. Registration Form: Users usually start by visiting the  platform's website and navigating to the registration page. Here, they'll find a registration form where they need to enter their information.
+            <p>1. Registration Form: Users usually start by visiting the  platform's website and navigating to the registration page. 
                 <br>
                     
                 
@@ -100,11 +91,9 @@
                 <li>Password (to create an account)</li>
                 <li>Date of birth</li>
                 <li>Contact information (optional)</li></ul><br>
-               3.  Verification: After filling out the registration form, users may need to verify their email address or phone number to confirm their identity. This step helps ensure the security of the platform and prevents fraudulent accounts.
-                <br>
-               4.  Account Setup: Once the registration is complete and verified, users can set up their account. This may involve:
-                <br>
-                Choosing a username or account ID and password 
+               3.  Verification: After filling out the registration form, users may need to verify their email address or phone number to confirm their identity.
+                
+                
                    
             </p>
             
@@ -117,11 +106,10 @@
         <span class="close" onclick="closePopup1()">&times;</span>
         <h2>Description for Add Content</h2>
         <!-- Add more information here -->
-        <p>Welcome to our exam portal! Our platform provides a comprehensive solution for conducting online exams efficiently and securely. Whether you're an educational institution, a corporate organization, or an individual educator, our portal offers a user-friendly interface and robust features to streamline the examination process.
+        <p>Welcome to our exam portal! Our platform provides a comprehensive solution for conducting online exams efficiently and securely. Whether you're an educational institution, a corporate organization.
             <br><br>
-            With our platform, you can create and customize exams tailored to your specific requirements. From multiple-choice questions to essay-type answers, our flexible question formats accommodate various testing needs. You have full control over exam settings, including time limits, question randomization, and grading criteria.
-            <br><br>
-            Students and candidates benefit from an intuitive exam-taking experience. Our portal ensures smooth navigation and seamless submission of answers. Real-time monitoring features enable administrators to oversee exams remotely, ensuring integrity and security throughout the assessment process.
+            With our platform, you can create and customize exams tailored to your specific requirements. From multiple-choice questions to essay-type answers, our flexible question formats accommodate various testing needs. 
+           
         </p>
     </div>
 </div>
@@ -130,17 +118,15 @@
 <div id="popup2" class="popup">
     <div class="popup-content">
         <span class="close" onclick="closePopup2()">&times;</span>
-        <h2>Description for conduct online Exam</h2>
+        <h2>Description to conduct online Exam</h2>
         <!-- Add more information here -->
-        <p>User Authentication and Registration: Implement a secure user authentication system where students, teachers, and administrators can log in with their credentials. 
+        <p>User Registration: Implement a secure user Registration system where students can log in with their credentials. 
             <br><br>
-            Exam Creation and Management: Provide a user-friendly interface for administrators to create and manage exams. This includes defining exam details such as title, duration, instructions, and question formats (multiple-choice, essay, etc.).
+            Exam Creation and Management: Provide a user-friendly interface for administrators to create and manage exams. This includes defining exam details such as title, instructions and question formats.
             <br><br>
-            Question Bank: Create a repository of questions categorized by subject, topic, difficulty level, etc. Ensure that questions are stored securely and can be easily accessed when creating exams. 
+            Question Bank: Create a repository of questions categorized by subject, topic, difficulty level, etc. 
             <br><br>
-            Scheduling and Timings: Allow administrators to schedule exams at specific dates and times. 
-            <br><br>
-            Question Types: Support different types of questions such as multiple-choice, true/false, fill-in-the-blank, and essay questions. </p>
+            Question Types: Support different types of questions such as multiple-choice, true/false, fill-in-the-blank. </p>
     </div>
 </div>
 
@@ -152,15 +138,12 @@
         <!-- Add more information here -->
         <p>Results and Analytics: Provide detailed exam results to students, including overall scores, section-wise performance, and correct/incorrect answers.
              <br><br>
-             Student Performance Feedback: The "View Result" feature allows students to access their exam results promptly after completion. It provides a comprehensive breakdown of their performance, including scores achieved in each section or subject, overall grade, and any feedback or comments provided by the instructor. 
+             Student Performance Feedback: The "View Result" feature allows students to access their exam results.
              <br><br>
-             Analytics and Insights: Alongside individual results, the "Analysis" component offers detailed analytics and insights into overall exam performance.
-             <br><br>
-             Customized Reports: The exam portal may also provide options for generating customized reports and visual representations of exam data.
-             <br><br>
-             Real-time Updates: To ensure transparency and timeliness, the "View Result and Analysis" feature should offer real-time updates.
-             <br><br>
-             Privacy and Security: Maintaining the privacy and security of exam results and analytics data is paramount. 
+             Analytics and Insights: Alongside individual results, analysis of overall exam performance.
+             
+             
+             
             </div>
 </div>
 
@@ -184,7 +167,7 @@
                         </div>
                         <p>  Use Any Device<br><br>
                           
-                          Exams can be taken on all devices; desktops, laptops, phones & tablets, just internet is required
+                          Exams can be taken on all devices; desktops, laptops, phones & tablets.
                         </p>
                     </div>
                 </li>
@@ -194,7 +177,7 @@
                         </div>
                         <p>All Question Types
                           <br><br>
-                          Question Support for MCQ (3 4 5 or 6 options), Numeric & Subjective & Coding (Java, Python, C++)
+                          Question Support for MCQ , Numeric , Subjective & Coding (Java, Python, C++)
                         </p>
                     </div>
                 </li>
@@ -214,7 +197,7 @@
                       </div>
                       <p>Analytics & Reports
                         <br><br>
-                        Multi-page Analytics giving Subject-wise, Topic-wise & Time-wise detailed analytics.
+                        Multi-page Analytics giving Subject, Topic & Time-wise detailed analytics.
                       </p>
                   </div>
               </li>
@@ -224,7 +207,7 @@
                     </div>
                     <p>Simple Import
                       <br><br>
-                      Question Papers in MS-Word are easily, quickly & accurately converted into Online Exams.
+                      Question Papers in MS-Word are easily, quickly converted into Online Exams.
                     </p>
                 </div>
             </li>
@@ -273,6 +256,7 @@
         </div>
     </footer>
     
+
 <script>
     function toggleMenu() {
     var headerLinks = document.getElementById("header-links");
@@ -287,7 +271,6 @@
 
 
 </script>
-
 
 
 
