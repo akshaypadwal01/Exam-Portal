@@ -68,6 +68,12 @@ body {
   margin: 5px;
 }
 
+.header a.active:hover {
+  background-color: rgb(160, 239, 190);
+  color: white;
+  margin: 5px;
+}
+
 .header-right {
   display: flex; /* Display links horizontally */
 }
