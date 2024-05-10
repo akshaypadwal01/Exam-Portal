@@ -64,7 +64,7 @@ body {
 
 
 .header a.active {
-  color: black;
+  color: white;
   margin: 5px;
 }
 
@@ -556,6 +556,10 @@ footer {
     padding: 10px; /* Add padding for spacing */
     z-index: 1; /* Ensure links appear above other content */
     border-radius:5px;
+  }
+  .header a.active {
+    color: black;
+    margin: 5px;
   }
 
   .header-links a {
