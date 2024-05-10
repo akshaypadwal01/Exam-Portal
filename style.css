@@ -64,7 +64,7 @@ body {
 
 
 .header a.active {
-  color: white;
+  color: black;
   margin: 5px;
 }
 
@@ -552,14 +552,15 @@ footer {
     top: 8%; /* Position the menu links below the menu button */
     left: 0;
     margin-left: 234px;
-    background-color: #333;
+    background-color: white;
     padding: 10px; /* Add padding for spacing */
     z-index: 1; /* Ensure links appear above other content */
+    border-radius:5px;
   }
 
   .header-links a {
     display: block; /* Display links as block to stack vertically */
-    color: #fff;
+    color: black;
     font-size: 16px; /* Set font size */  
   }
 
